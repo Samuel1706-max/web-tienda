@@ -17,6 +17,6 @@ Bienvenido a mi página web dedicada al mundo del deporte. Aquí encontrarás la
 
 ## Instalación
 
-1. Clona el repositorio:
+1. Clona el repositorio con el siguiente comando:
    ```bash
    git clone https://github.com/tu_usuario/tu_repositorio.git

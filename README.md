@@ -13,7 +13,6 @@ Bienvenido a mi página web dedicada al mundo del deporte. Aquí encontrarás la
 
 - **HTML5**: Estructura de la página.
 - **CSS3**: Estilos y diseño responsivo.
-- **JavaScript**: Interactividad y dinamismo.
 - **Frameworks**: [Bootstrap](https://getbootstrap.com/) para diseño responsive.
 
 ## Instalación

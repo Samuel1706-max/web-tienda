@@ -1,13 +1,13 @@
 # Mi Página Web Deportiva
 
-Bienvenido a mi página web dedicada al mundo del deporte. Aquí encontrarás noticias, análisis, y contenido sobre tus deportes y atletas favoritos.
+Bienvenido a mi página web dedicada al mundo del deporte. Aquí encontrarás la mejor ropa deportiva.
 
 ## Contenido
 
-- **Noticias**: Actualizaciones diarias sobre eventos deportivos.
-- **Análisis**: Artículos y opiniones sobre las últimas tendencias y partidos.
-- **Eventos**: Calendario de próximos eventos deportivos.
-- **Foro**: Un lugar para discutir y compartir opiniones con otros aficionados.
+- **Camisetas**: Actualizaciones diarias sobre eventos deportivos.
+- **Tennis**: Artículos y opiniones sobre las últimas tendencias y partidos.
+- **Sudaderas**: Calendario de próximos eventos deportivos.
+
 
 ## Tecnologías Usadas
 

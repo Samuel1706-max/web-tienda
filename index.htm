@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Viva Sport</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="img/Logo.ico" type="image/x-icon">
+
+</head>
+
+<body>
+     <header>
+
+        <div class="top-bar" onclick="toggleDropdown()">
+            ¡Continúan los descuentos hasta 50% OFF! ▼
+        </div>
+
+            <div class="dropdown" id="dropdownContent">
+                <div class="usp-item">
+                    <div class="usp-item-title">📢 ¡CONTINÚAN LOS DESCUENTOS! HASTA 50% OFF</div>
+                    <div class="usp-item-content">Aprovecha los descuentos en el outlet con HASTA 50% OFF. ¡No te los pierdas!</div>
+                    <div class="usp-item-cta">
+                        <a href="#descuento1" title="COMPRAR AHORA">COMPRAR AHORA</a>
+                    </div>
+            </div>
+
+            <div class="usp-item">
+                <div class="usp-item-title">👚👖 PARA AÑADIR A TU GUARDAROPA 🩱👗</div>
+                <div class="usp-item-content">Descubre desde básicos atemporales hasta tendencias modernas. Haz una declaración de estilo con los artículos originales disponibles.</div>
+                <div class="usp-item-cta">
+                    <a href="#descuento2" title="ENCUENTRA LO QUE BUSCAS">ENCUENTRA LO QUE BUSCAS</a>
+                </div>
+            </div>
+
+            <div class="usp-item">
+                <div class="usp-item-title">¡Al ritmo de La Sele! 💛💛💙❤️</div>
+                <div class="usp-item-content">Prepárate para vivir los próximos partidos con las camisetas oficiales FCF, que la música y el fútbol los pone La Sele.</div>
+                <div class="usp-item-cta">
+                    <a href="descuento3.html" title="COMPRAR AHORA">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleDropdown() {
+                const dropdownContent = document.getElementById('dropdownContent');
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+            }
+    
+            // Cerrar el dropdown si se hace clic fuera de él
+            window.onclick = function(event) {
+                if (!event.target.matches('.top-bar')) {
+                    const dropdownContent = document.getElementById('dropdownContent');
+                    if (dropdownContent.style.display === 'block') {
+                        dropdownContent.style.display = 'none';
+                    }
+                }
+            };
+        </script>
+        
+                
+
+        <nav class="navbar navbar-expand-lg navbar-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://127.0.0.1:5500/index.htm">  <img src="img/Logo.png" alt="Logo" style="height: 40px;"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-black" href="#">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-black" href="#">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-black" href="#">Niños</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-black" href="#">Deporte</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex align-items-center form-search" role="search" style="margin: 20px;">
+                        <i class="fas fa-search"></i>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" style="border-radius: 25px; padding: 10px 20px;" title="Carrito Vacío" data-bs-toggle="tooltip" data-bs-placement="top">
+                            <i class="bi bi-bag"></i>
+                        </button>                                       
+                    </form>
+        
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="image-container">
+        <img src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F1021%2Fr1403672_1295x729_16%2D9.jpg" alt="Descripción de la imagen" class="image">
+        <div class="overlay-content">
+            <p class="text-overlay">MESSI Y BAD BUNNY</p>
+            <button class="Compra-aqui">
+                Compra aquí
+                <span class="flecha">➟</span> 
+            </button>
+            
+        </div>
+    </div>
+    <section class="Calidad">
+        <h2>Lo mejor y mas nuevo</h2>
+        <div class="container">
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="container mt-5">
+        <h2 class="text-center">Galería de Tenis</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="\img\1.jpg" alt="Tennis 1" class="img-fluid mb-3">
+                <img src="\img\2.jpg" alt="Tennis 2" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-4">
+                <img src="\img\3.jpg" alt="Tennis 3" class="img-fluid mb-3">
+                <img src="\img\4.webp" alt="Tennis 4" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-4">
+                <img src="\img\5.avif" alt="Tennis 5" class="img-fluid mb-3">
+                <img src="\img\6.webp" alt="Tennis 6" class="img-fluid mb-3">
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container mt-5">
+        <h2 class="text-center">CAMBIAR TITUL 1</h2>
+
+        <!-- Primera fila -->
+        <h3 class="mt-4">Colección 1</h3>
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex overflow-auto">
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/1.jpg" alt="Tennis 1" class="img-fluid mb-2 tenis-img">
+                        <p>Nike Tech Fleece x Central Cee Jogger - Hombre</p>
+                        <p>109,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/2.jpg" alt="Tennis 2" class="img-fluid mb-2 tenis-img">
+                        <p>Nike Air Max 270 - Mujer</p>
+                        <p>129,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/3.jpg" alt="Tennis 3" class="img-fluid mb-2 tenis-img">
+                        <p>Adidas Ultraboost - Hombre</p>
+                        <p>159,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/4.jpg" alt="Tennis 4" class="img-fluid mb-2 tenis-img">
+                        <p>Puma RS-X - Mujer</p>
+                        <p>109,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/5.jpg" alt="Tennis 5" class="img-fluid mb-2 tenis-img">
+                        <p>Reebok Classic - Hombre</p>
+                        <p>89,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/6.jpg" alt="Tennis 6" class="img-fluid mb-2 tenis-img">
+                        <p>New Balance 574 - Mujer</p>
+                        <p>99,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/7.jpg" alt="Tennis 7" class="img-fluid mb-2 tenis-img">
+                        <p>Vans Old Skool - Hombre</p>
+                        <p>69,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/8.jpg" alt="Tennis 8" class="img-fluid mb-2 tenis-img">
+                        <p>Asics Gel-Kayano - Mujer</p>
+                        <p>159,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/9.jpg" alt="Tennis 9" class="img-fluid mb-2 tenis-img">
+                        <p>Hoka One One - Hombre</p>
+                        <p>139,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/10.jpg" alt="Tennis 10" class="img-fluid mb-2 tenis-img">
+                        <p>On Cloudstratus - Mujer</p>
+                        <p>159,99 €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda fila -->
+        <h3 class="mt-4">CAMBIAR TITULOS 2</h3>
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex overflow-auto">
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/11.jpg" alt="Tennis 11" class="img-fluid mb-2 tenis-img">
+                        <p>Nike Air Force 1 - Hombre</p>
+                        <p>109,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/12.jpg" alt="Tennis 12" class="img-fluid mb-2 tenis-img">
+                        <p>Adidas Superstar - Mujer</p>
+                        <p>89,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/13.jpg" alt="Tennis 13" class="img-fluid mb-2 tenis-img">
+                        <p>Puma Cali - Hombre</p>
+                        <p>99,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/14.jpg" alt="Tennis 14" class="img-fluid mb-2 tenis-img">
+                        <p>New Balance 990 - Mujer</p>
+                        <p>189,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/15.jpg" alt="Tennis 15" class="img-fluid mb-2 tenis-img">
+                        <p>Hoka Clifton - Hombre</p>
+                        <p>139,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/16.jpg" alt="Tennis 16" class="img-fluid mb-2 tenis-img">
+                        <p>Asics Gel-Lyte - Mujer</p>
+                        <p>119,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/17.jpg" alt="Tennis 17" class="img-fluid mb-2 tenis-img">
+                        <p>Reebok Nano - Hombre</p>
+                        <p>109,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/18.jpg" alt="Tennis 18" class="img-fluid mb-2 tenis-img">
+                        <p>Nike React Infinity - Mujer</p>
+                        <p>149,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/19.jpg" alt="Tennis 19" class="img-fluid mb-2 tenis-img">
+                        <p>Adidas NMD - Hombre</p>
+                        <p>139,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/tennis/20.jpg" alt="Tennis 20" class="img-fluid mb-2 tenis-img">
+                        <p>Puma RS 9.8 - Mujer</p>
+                        <p>109,99 €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tercera fila -->
+        <h3 class="mt-4">CAMBIAR TITULO 3</h3>
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex overflow-auto">
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/1.jpg" alt="Tennis 21" class="img-fluid mb-2 tenis-img">
+                        <p>Nike Blazer - Hombre</p>
+                        <p>99,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/2.jpg" alt="Tennis 22" class="img-fluid mb-2 tenis-img">
+                        <p>Adidas Stan Smith - Mujer</p>
+                        <p>89,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/3.jpg" alt="Tennis 23" class="img-fluid mb-2 tenis-img">
+                        <p>Puma Clyde - Hombre</p>
+                        <p>99,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/4.jpg" alt="Tennis 24" class="img-fluid mb-2 tenis-img">
+                        <p>New Balance 574 Sport - Mujer</p>
+                        <p>109,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/5.jpg" alt="Tennis 25" class="img-fluid mb-2 tenis-img">
+                        <p>Hoka Bondi - Hombre</p>
+                        <p>159,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/6.jpg" alt="Tennis 26" class="img-fluid mb-2 tenis-img">
+                        <p>Asics Gel-Quantum - Mujer</p>
+                        <p>139,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/7.jpg" alt="Tennis 27" class="img-fluid mb-2 tenis-img">
+                        <p>Reebok Floatride - Hombre</p>
+                        <p>139,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/8.jpg" alt="Tennis 28" class="img-fluid mb-2 tenis-img">
+                        <p>Nike Air Huarache - Mujer</p>
+                        <p>129,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/9.jpg" alt="Tennis 29" class="img-fluid mb-2 tenis-img">
+                        <p>Adidas Terrex - Hombre</p>
+                        <p>159,99 €</p>
+                    </div>
+                    <div class="col-2 mx-2">
+                        <img src="img/sudaderas/10.jpg" alt="Tennis 30" class="img-fluid mb-2 tenis-img">
+                        <p>Puma Basket - Mujer</p>
+                        <p>89,99 €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    <footer class="bg-dark text-light mt-5 p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Recursos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Tarjetas de regalo</a></li>
+                        <li><a href="#" class="text-light">Buscar una tienda</a></li>
+                        <li><a href="#" class="text-light">Nike Journal</a></li>
+                        <li><a href="#" class="text-light">Hazte Member</a></li>
+                        <li><a href="#" class="text-light">Descuento para estudiantes</a></li>
+                        <li><a href="#" class="text-light">Comentarios</a></li>
+                        <li><a href="#" class="text-light">Códigos promocionales</a></li>
+                        <li><a href="#" class="text-light">Ayuda</a></li>
+                        <li><a href="#" class="text-light">Obtener ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ayuda</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Estado del pedido</a></li>
+                        <li><a href="#" class="text-light">Envíos y entregas</a></li>
+                        <li><a href="#" class="text-light">Devoluciones</a></li>
+                        <li><a href="#" class="text-light">Opciones de pago</a></li>
+                        <li><a href="#" class="text-light">Contacto</a></li>
+                        <li><a href="#" class="text-light">Evaluaciones</a></li>
+                        <li><a href="#" class="text-light">Ayuda con los códigos promocionales de Nike</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Empresa</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Acerca de Nike</a></li>
+                        <li><a href="#" class="text-light">Novedades</a></li>
+                        <li><a href="#" class="text-light">Empleo</a></li>
+                        <li><a href="#" class="text-light">Inversores</a></li>
+                        <li><a href="#" class="text-light">Sostenibilidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- TOOLTIP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Inicializa los tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
+</html>

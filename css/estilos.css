@@ -92,15 +92,16 @@ header{
 
 /* titulo abajo */
 .Calidad {
-    text-align: center;
-    margin-top: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding-left: 20px; 
 }
 
 .Calidad h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
+    font-weight: bold; /* Hace el texto en negrita */
 }
+
 
 
 .nav-item {
@@ -182,3 +183,10 @@ header{
     height: 150px; 
     object-fit: cover; 
 }
+#carouselExample {
+    max-width: 100px; 
+    margin: auto;
+    margin-top: 50px
+    ;
+  }
+  

@@ -37,26 +37,26 @@
 
     <div class="checkout-container">
         <h2 class="checkout-title">Resumen de Compra</h2>
-        <form>
+        <form id="registerForm">
             <div class="form-group">
                 <label for="email">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com" required>
+                <input type="email" class="form-control" id="correo_envio" placeholder="tuemail@ejemplo.com" required>
             </div>
             <div class="form-group">
                 <label for="address">Dirección de Envío</label>
-                <input type="text" class="form-control" id="address" placeholder="Calle, Número, Ciudad" required>
+                <input type="text" class="form-control" id="direccion_envio" placeholder="Calle, Número, Ciudad" required>
             </div>
             <div class="form-group">
                 <label for="city">Ciudad</label>
-                <input type="text" class="form-control" id="city" required>
+                <input type="text" class="form-control" id="ciudad" required>
             </div>
             <div class="form-group">
                 <label for="postal">Código Postal</label>
-                <input type="text" class="form-control" id="postal" required>
+                <input type="text" class="form-control" id="codigo_postal" required>
             </div>
             <div class="form-group">
                 <label for="payment">Método de Pago</label>
-                <select class="form-control" id="payment" required>
+                <select class="form-control" id="metodo_pago" required>
                     <option>Tarjeta de Crédito</option>
                     <option>PayPal</option>
                     <option>Transferencia Bancaria</option>
@@ -65,6 +65,40 @@
             <button type="submit" class="btn btn-custom btn-block" style="margin-top: 20px;">Confirmar Compra</button>
         </form>
     </div>
+
+    <script>
+        // Manejar el envío del formulario
+        document.getElementById("registerForm").addEventListener("submit", async function (event) {
+            event.preventDefault(); // Evitar el envío normal del formulario
+    
+            // Capturar los valores del formulario
+            const correo_electronico = document.getElementById("correo_envio").value;
+            const direccion_envio = document.getElementById("direccion_envio").value;
+            const ciudad = document.getElementById("ciudad").value;
+            const codigo_postal = document.getElementById("codigo_postal").value;
+            const metodo_pago = document.getElementById("metodo_pago").value;
+    
+            try {
+                // Enviar la solicitud POST al servidor
+                const response = await fetch("http://localhost:3000/registrar_envio", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ correo_electronico, direccion_envio, ciudad, codigo_postal, metodo_pago }),
+                });
+    
+                // Verificar la respuesta
+                if (response.ok) {
+                    alert("Envío registrado exitosamente");
+                    document.getElementById("registerForm").reset(); // Reiniciar el formulario
+                } else {
+                    alert("Error al registrar el envío");
+                }
+            } catch (error) {
+                console.error("Error en la solicitud:", error);
+                alert("Hubo un problema con el registro del envío");
+            }
+        });
+    </script>
     
 
 <footer class="bg-dark text-center py-4">

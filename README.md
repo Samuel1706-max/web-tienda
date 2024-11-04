@@ -22,12 +22,12 @@ Bienvenido a mi página web dedicada al mundo del deporte. Aquí encontrarás la
    git clone https://github.com/tu_usuario/tu_repositorio.git
 
 
-## Ejecucion
+## Ejecución
 
--- abrir el terminal de node
--- ejecutar el comando cd C:\Users\samue\OneDrive\Escritorio\web-tienda para ir a la ruta del proyecto
--- ejecutar node server.js para elevar el servicio, debo de ver un mensaje que diga 
+- abrir el terminal de node
+- ejecutar el comando cd C:\Users\samue\OneDrive\Escritorio\web-tienda para ir a la ruta del proyecto
+- ejecutar node server.js para elevar el servicio, debo de ver un mensaje que diga 
    Servidor ejecutándose en http://localhost:3000
    Conectado a la base de datos MySQL"
--- abrir visual y ejecutarlo con live server 
--- verificar registro en MySQl
+- abrir visual y ejecutarlo con live server 
+- verificar registro en MySQl

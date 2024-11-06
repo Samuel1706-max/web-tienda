@@ -165,17 +165,17 @@
         console.log(nombre);
 
         try {
-            // Enviar la solicitud POST al servidor
+            
             const response = await fetch("http://localhost:3000/registrar_usuario", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" }, // Definir el tipo de contenido
-                body: JSON.stringify({ nombre, apellido, correo_electronico }), // Convertir el objeto a JSON
+                headers: { "Content-Type": "application/json" }, 
+                body: JSON.stringify({ nombre, apellido, correo_electronico }),
             });
 
-            // Verificar la respuesta
+            
             if (response.ok) {
                 alert("Usuario registrado exitosamente");
-                document.getElementById("registerForm").reset(); // Reiniciar el formulario
+                document.getElementById("registerForm").reset();
             } else {
                 alert("Error al registrar el usuario");
             }

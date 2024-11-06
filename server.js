@@ -45,18 +45,18 @@
 const express = require("express");
 const mysql = require("mysql2");
 const bodyParser = require("body-parser");
-const cors = require("cors"); // Importar el paquete cors
+const cors = require("cors"); 
 
 const app = express();
-app.use(cors()); // Habilitar CORS para todas las rutas
+app.use(cors()); 
 app.use(bodyParser.json());
 
-// Configuración de la conexión MySQL
+
 const db = mysql.createConnection({
   host: "127.0.0.1",
-  user: "root", // Cambia esto por tu usuario de MySQL
-  password: "root", // Cambia esto por tu contraseña de MySQL
-  database: "viva_sport", // Asegúrate de que el nombre esté en minúsculas y sea correcto
+  user: "root", 
+  password: "root", 
+  database: "viva_sport", 
   port: 3306,
 });
 
@@ -68,7 +68,7 @@ db.connect((err) => {
   }
 });
 
-// Ruta para registrar al usuario
+
 app.post("/registrar_usuario", (req, res) => {
   const { nombre, apellido, correo_electronico } = req.body;
 

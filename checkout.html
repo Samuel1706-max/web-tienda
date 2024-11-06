@@ -67,11 +67,11 @@
     </div>
 
     <script>
-        // Manejar el envío del formulario
+        
         document.getElementById("registerForm").addEventListener("submit", async function (event) {
-            event.preventDefault(); // Evitar el envío normal del formulario
+            event.preventDefault(); 
     
-            // Capturar los valores del formulario
+            
             const correo_electronico = document.getElementById("correo_envio").value;
             const direccion_envio = document.getElementById("direccion_envio").value;
             const ciudad = document.getElementById("ciudad").value;
@@ -79,17 +79,17 @@
             const metodo_pago = document.getElementById("metodo_pago").value;
     
             try {
-                // Enviar la solicitud POST al servidor
+            
                 const response = await fetch("http://localhost:3000/registrar_envio", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ correo_electronico, direccion_envio, ciudad, codigo_postal, metodo_pago }),
                 });
     
-                // Verificar la respuesta
+                
                 if (response.ok) {
                     alert("Envío registrado exitosamente");
-                    document.getElementById("registerForm").reset(); // Reiniciar el formulario
+                    document.getElementById("registerForm").reset();
                 } else {
                     alert("Error al registrar el envío");
                 }
